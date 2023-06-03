@@ -4,6 +4,7 @@ import styled from 'styled-components/macro'
 import medium from '../public/medium.svg'
 import parallaxImg from '../public/parallax.png'
 import creativeImg from '../public/creative-agency.jpg'
+import maxresdefault from '../public/maxresdefault.jpg'
 
 const mobileWidth = '450px'
 
@@ -143,22 +144,30 @@ const Link = styled.a`
 function Blogs(props) {
 
   const blogs = [
-      {
-          id: 1,
-          title: "Parallax effect on CSS",
-          content: "Parallax scrolling is a computer graphics technique used by web designers to create a faux-3D effect. As users scroll down a webpage, different layers of content or backgrounds move at different speeds, and this creates an optical illusion for users.",
-          publishicon: medium,
-          img: parallaxImg,
-          link: "https://medium.com/@mohdniaal/parallax-effect-on-css-6891a396028d"
-      },
-      {
-          id: 2,
-          title: "Bootstrap framework on Angular",
-          content: "Bootstrap is a framework to help you building and designing various responsive web pages. It includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels, etc. It also gives you support for JavaScript plugins.          ",
-          publishicon: medium,
-          img: creativeImg,
-          link: "https://medium.com/@mohdniaal/bootstrap-framework-on-angular-7cd82334a1d6"
-      },
+    {
+      id: 1,
+      title: "Parallax effect on CSS",
+      content: "Parallax scrolling is a computer graphics technique used by web designers to create a faux-3D effect. As users scroll down a webpage, different layers of content or backgrounds move at different speeds, and this creates an optical illusion for users.",
+      publishicon: medium,
+      img: parallaxImg,
+      link: "https://medium.com/@mohdniaal/parallax-effect-on-css-6891a396028d"
+    },
+    {
+      id: 2,
+      title: "Bootstrap framework on Angular",
+      content: "Bootstrap is a framework to help you building and designing various responsive web pages. It includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels, etc. It also gives you support for JavaScript plugins.          ",
+      publishicon: medium,
+      img: creativeImg,
+      link: "https://medium.com/@mohdniaal/bootstrap-framework-on-angular-7cd82334a1d6"
+    },
+    {
+      id: 3,
+      title: "Angular + Animate.css",
+      content: "Animate.css is a cross-browser library of CSS animations that is incredibly easy to use. Overall, the angular animation framework allows you to create animations that have the same native performance as pure CSS animations. The benefit is that you can easily add and control.",
+      publishicon: medium,
+      img: maxresdefault,
+      link: "https://medium.com/@mohdniaal/animation-in-angular-using-css-5-easy-steps-cd2b893d6d59"
+    }
   ];
 
   const cardItem = (item) => {
@@ -179,17 +188,17 @@ function Blogs(props) {
 
   return (
     <Main>
-        <Heading>
-          <HeadingBG>BLOGS</HeadingBG>
-          <HeadingText>Blogs</HeadingText>
-        </Heading>
-        <Body>
-          <Content>
-            <Cards>
-              {blogs.map((item) => cardItem(item))}
-            </Cards>
-          </Content>
-        </Body>
+      <Heading>
+        <HeadingBG>BLOGS</HeadingBG>
+        <HeadingText>Blogs</HeadingText>
+      </Heading>
+      <Body>
+        <Content>
+          <Cards>
+            {blogs.map((item) => cardItem(item))}
+          </Cards>
+        </Content>
+      </Body>
     </Main>
   );
 }

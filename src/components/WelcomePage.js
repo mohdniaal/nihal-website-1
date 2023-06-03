@@ -216,10 +216,11 @@ function WelcomePage(props) {
           <LProfile />
           <div>
             <Name>Muhammed</Name>
-            <Name>Nihal K</Name>
+            <Name>Nihal</Name>
           </div>
           <Title ref={designation}>{designations[designations.length-1]}</Title>
           <Links>
+          <a href="https://www.instagram.com/m.niaal/">{icons.insta.icon}</a>
           <a href="https://github.com/mohdniaal">{icons.github.icon}</a>
           <a href="https://medium.com/@mohdniaal">{icons.medium.icon}</a>
           <a href="https://www.linkedin.com/in/muhammed-nihal-k-1b18a1250/">{icons.linkedin.icon}</a>
