@@ -34,6 +34,7 @@ const HeadingBG = styled.div`
     top: 0;
   }
 `;
+
 const HeadingText = styled.div`
   position: absolute;
   top: 45px;

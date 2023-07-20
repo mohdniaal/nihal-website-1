@@ -179,7 +179,7 @@ const Icons = styled.div`
 `;
 
 function WelcomePage(props) {
-  const designations = ["Frontend Developer", "Angular Developer"]
+  const designations = ["Frontend Developer", "Angular Developer" , "React Developer"]
   const designation = useRef()
   const ICONS_CONTAINER_WIDTH = 500;
 
